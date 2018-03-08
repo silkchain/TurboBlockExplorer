@@ -1,0 +1,62 @@
+.list__item {
+  flex-basis: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: $list-item-width;
+  padding: $padding-small;
+  color: $color-dark;
+}
+
+.list__item a {
+  color: $color-dark;
+}
+
+.list__item a:hover {
+  text-decoration: none;
+}
+
+.list__item:nth-child(odd) {
+  background-color: $color-accent-dark;
+}
+
+.list__item:nth-child(even) {
+  background-color: $color-accent-medium;
+}
+
+.list__key {
+  display: block;
+  min-width: $list-key-width;
+}
+
+.list__value {
+  text-align: right;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+
+@media #{$large} {
+  .list__item {
+    flex-basis: calc(50% - (#{$margin-small} / 2));
+  }
+
+  .list__item:nth-child(even) {
+    margin-left: $margin-small;
+  }
+
+  .list__item:nth-child(4n+1) {
+    background-color: $color-accent-dark;
+  }
+
+  .list__item:nth-child(4n+2) {
+    background-color: $color-accent-dark;
+  }
+
+  .list__item:nth-child(4n+3) {
+    background-color: $color-accent-medium;
+  }
+
+  .list__item:nth-child(4n+4) {
+    background-color: $color-accent-medium;
+  }
+}

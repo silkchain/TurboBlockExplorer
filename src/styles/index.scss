@@ -1,0 +1,15 @@
+@import 'variables.scss';
+@import 'normalize.scss';
+@import 'reset.scss';
+
+/* COMPONENT STYLES */
+@import '../components/app.scss';
+@import '../components/barchart.scss';
+@import '../components/detaillist.scss';
+@import '../components/detaillistitem.scss';
+@import '../components/search.scss';
+@import '../components/searchbutton.scss';
+@import '../components/start.scss';
+@import '../components/statistics.scss';
+@import '../components/table.scss';
+@import '../components/textstatsitem.scss';

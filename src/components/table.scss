@@ -1,0 +1,103 @@
+.turbo-table {
+  table-layout: fixed;
+  width: 100%;
+  color: $color-dark;
+}
+
+.turbo-table__header {
+  display: none;
+}
+
+.turbo-table__row {
+  display: block;
+  margin-top: $margin-small;
+  padding: $padding-small;
+}
+
+.turbo-table__row:nth-child(odd) {
+  background-color: $color-accent-dark;
+}
+
+.turbo-table__row:nth-child(even) {
+  background-color: $color-accent-medium;
+}
+
+.turbo-table__row:first-of-type {
+  margin-top: 0;
+}
+
+.turbo-table__cell {
+  position: relative;
+  display: block;
+  padding: $padding-small $padding-tiny;
+  // needed to make space for the ::before element
+  padding-left: calc(30% + #{$padding-small});
+  border-bottom: 1px solid $color-accent-light;
+  text-align: right;
+  vertical-align: center;
+}
+
+.turbo-table__cell:last-of-type {
+  border: none;
+}
+
+.turbo-table__cell::before {
+  content: attr(data-label);
+  position: absolute;
+  top: $padding-small;
+  left: $padding-tiny;
+  width: 30%;
+  text-align: left;
+  pointer-events: none;
+}
+
+.turbo-table__link {
+  display: block;
+  width: 100%;
+  word-wrap: break-word;
+  word-break: break-all;
+  color: $color-dark;
+}
+
+.turbo-table__link:hover {
+  text-decoration: none;
+}
+
+@media #{$medium} {
+  .turbo-table {
+    table-layout: auto;
+  }
+
+  .turbo-table__header {
+    display: table-header-group;
+    text-align: left;
+    color: $color-light;
+  }
+
+  .turbo-table__row {
+    display: table-row;
+  }
+
+  .turbo-table__cell {
+    display: table-cell;
+    padding: $padding-small;
+    border: none;
+    text-align: left;
+    min-width: $table-cell-width;
+  }
+  .turbo-table__cell::before {
+    display: none;
+  }
+}
+
+@media #{$x-large} {
+  .turbo-table__cell {
+    padding: $padding-tiny;
+  }
+}
+
+@media #{$xx-large} {
+  .turbo-table__cell {
+    padding: $padding-small;
+  }
+}

@@ -1,0 +1,117 @@
+.turbo-app {
+  min-height: 100vh;
+  padding-top: calc(#{$header-height-small-screen} + #{$padding-tiny});
+  padding-bottom: $padding-standard;
+}
+
+/* HEADER */
+
+.turbo-header {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: $header-height-small-screen;
+  z-index: $header-z;
+  padding: $padding-small;
+  background-color: $color-background;
+  box-shadow: 0 0 16px 0 $color-background;
+}
+
+.turbo-header__link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.turbo-header__title {
+  font-size: $font-title-small;
+}
+
+.turbo-header__fineprint {
+  margin: $margin-tiny 0;
+  font-size: $font-tiny;
+}
+
+/* CONTENT */
+
+.turbo-content-wrapper {
+  width: 100%;
+  height: 100%;
+}
+
+.content-block {
+  padding: $padding-small;
+  background-color: $color-dark;
+}
+
+.content-block__title {
+  padding: $padding-small $padding-small 0;
+  background-color: $color-dark;
+  font-size: $font-standard;
+  text-transform: uppercase;
+}
+
+.content-block__title a {
+  color: $color-light;
+}
+
+.content-block__title a:hover {
+  text-decoration: none;
+}
+
+.content__fineprint {
+  font-size: $font-tiny;
+}
+
+@media #{$medium} {
+  .turbo-app {
+    padding-top: calc(#{$header-height-medium-screen} + #{$padding-tiny});
+  }
+
+  /* HEADER */
+
+  .turbo-header {
+    height: $header-height-medium-screen;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .turbo-header__title {
+    font-size: $font-title-large;
+  }
+
+  /* CONTENT */
+
+  .turbo-content-wrapper {
+    padding: $padding-small $padding-small 0;
+  }
+
+  .content-block__title {
+    padding: 0;
+    background-color: $color-background;
+    margin-bottom: $margin-small;
+    font-size: $font-title-small;
+  }
+}
+
+@media #{$large} {
+  .turbo-app {
+    padding-top: calc(#{$header-height-large-screen} + #{$padding-tiny});
+  }
+
+  /* HEADER */
+
+  .turbo-header {
+    height: $header-height-large-screen;
+    padding: $padding-standard;
+  }
+
+  /* CONTENT */
+
+  .turbo-content-wrapper {
+    padding: $padding-small $padding-standard 0;
+  }
+}

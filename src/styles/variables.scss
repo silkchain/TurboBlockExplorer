@@ -1,0 +1,84 @@
+/* COLOURS */
+
+/* Logo colours – do not change */
+$turbo-oceanblue: rgb(66, 148, 209);
+$turbo-skyblue: rgb(61, 167, 215);
+$turbo-turquoise: rgb(60, 195, 219);
+
+$turbo-indigo: rgb(12, 13, 40);
+$turbo-grey: rgb(15, 54, 66);
+$turbo-white: rgb(221, 221, 221);
+$turbo-orange: rgb(229, 155, 43);
+
+$color-background: $turbo-grey;
+$color-dark: $turbo-indigo;
+$color-light: $turbo-white;
+$color-accent-dark: $turbo-oceanblue;
+$color-accent-medium: $turbo-skyblue;
+$color-accent-light: $turbo-turquoise;
+$color-cta: $turbo-orange;
+
+/* FONTS */
+
+@turboin turbo-font-main {
+  font-family: 'Muli', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  color: $color-light;
+}
+
+/* MEASURES */
+
+$turbo-tiny-gap: 4px;
+$turbo-small-gap: 12px;
+$turbo-medium-gap: 24px;
+
+// padding
+$padding-tiny: $turbo-tiny-gap;
+$padding-small: $turbo-small-gap;
+$padding-standard: $turbo-medium-gap;
+
+// margin
+$margin-tiny: $turbo-tiny-gap;
+$margin-small: $turbo-small-gap;
+$margin-standard: $turbo-medium-gap;
+
+// header
+$header-height-small-screen: 138px;
+$header-height-medium-screen: 90px;
+$header-height-large-screen: 106px;
+
+// input fields
+$input-height: 42px;
+$input-width: 420px;
+$padding-input: $turbo-tiny-gap * 2;
+
+// buttons
+$button-height: 60px;
+
+// special elements
+$bar-chart-height: 80px;
+$bar-chart-width: $turbo-small-gap;
+
+$list-item-width: 630px;
+$list-key-width: 80px;
+
+$table-cell-width: 92px;
+
+/* FONT SIZES */
+
+$font-tiny: 12px;
+$font-standard: 16px;
+$font-title-small: 22px;
+$font-title-large: 32px;
+
+/* Z INDEX */
+
+$header-z: 20;
+
+/* MEDIA QUERIES */
+
+$medium: '(min-width: 526px)';
+$large: '(min-width: 680px)';
+$x-large: '(min-width: 1020px)';
+$xx-large: '(min-width: 1370px)';

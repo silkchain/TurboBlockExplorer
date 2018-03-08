@@ -1,0 +1,37 @@
+.text-stats {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.chart-stats {
+  display: flex;
+  flex-direction: column;
+}
+
+@media #{$medium} {
+  .chart-stats {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+@media #{$large} {
+  .chart-stats {
+    flex-direction: row;
+  }
+}
+
+@media #{$x-large} {
+  .chart-stats {
+    flex-direction: column;
+  }
+}
+
+@media #{$xx-large} {
+  .chart-stats {
+    flex-direction: row;
+  }
+}

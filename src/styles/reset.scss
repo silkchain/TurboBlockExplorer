@@ -1,0 +1,31 @@
+* {
+  box-sizing: border-box;
+}
+
+body, html {
+  @include turbo-font-main;
+  min-height: 100%;
+  background-color: $color-background;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+dl,
+th {
+  margin: 0;
+  font-weight: 300;
+}
+
+input, button {
+  @include turbo-font-main;
+  border: none;
+}
+
+button {
+  padding: 0;
+  background: transparent;
+}
