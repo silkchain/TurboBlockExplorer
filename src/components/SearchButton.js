@@ -1,6 +1,6 @@
 import React from 'react';
 
-import TurboVortex from '@/svgs/TurboVortex';
+import TurboVortex from '@/svgs/MixVortex';
 import Search from '@/svgs/Search';
 
 const SearchButton = () => (

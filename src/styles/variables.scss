@@ -20,7 +20,7 @@ $color-cta: $turbo-orange;
 
 /* FONTS */
 
-@turboin turbo-font-main {
+@mixin turbo-font-main {
   font-family: 'Muli', sans-serif;
   font-weight: 300;
   font-size: 16px;
