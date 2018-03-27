@@ -12,7 +12,7 @@ SDKs in other languages like Java, Go, Python will be available soon.
 
 ## Installation
 
-**Note:** This project dependencies on [Nodejs](https://nodejs.org/), make sure your machine has [Nodejs](https://nodejs.org/) installed before installation.
+**Note:** This project depends on [Nodejs](https://nodejs.org/). Make sure you have [Nodejs](https://nodejs.org/) installed before installation.
 
 ```
 git clone git@github.com:silkchain/TurboBlockExplorer.git
@@ -22,7 +22,7 @@ npm i
 
 ## Preview
 
-The project with a Ethereum node，so you can execute npm start command preview, see http://localhost:3000/
+This project explore blocks for an Ethereum chainb (now with a Ethereum testnet node running behind a server url hardcoded in src/constants/index.js). You can execute npm start command to preview out of the box at http://localhost:3000/
 
 ```
 npm start
