@@ -1,4 +1,4 @@
-export const fallbackUrl = 'http://rpc.turboblockware.org:8645';
+export const fallbackUrl = 'http://120.27.21.141:8545';
 export const maxBlocksPerPage = 10;
 
 export const tableFields = {
