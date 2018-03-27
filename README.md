@@ -22,7 +22,7 @@ npm i
 
 ## Preview
 
-This project explores blocks for an Ethereum blockchain (now with a Ethereum testnet node running behind a server url hardcoded in src/constants/index.js). You can execute npm start command to preview out of the box at http://localhost:3000/
+This project explores blocks for an Ethereum blockchain (backed by an Ethereum testnet node whose rpc url was hardcoded in src/constants/index.js). You can execute npm start command to preview, see http://localhost:3000/
 
 ```
 npm start
